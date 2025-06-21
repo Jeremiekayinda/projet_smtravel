@@ -7,7 +7,7 @@
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
-	 <link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="../css/ncolis.css">
 	<title>SEM TRAVEL DRC</title>
 </head>
 <body>
@@ -20,32 +20,32 @@
 			<span class="text">SEM TRAVEL DRC</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
-				<a href="#">
+			<li>
+				<a href="../index.html">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Tableau de bord</span>
 				</a>
 			</li>
-			<li>
-				<a href="#">
+			<li >
+				<a href="ncolis.html">
 					<i class='bx bx-package' ></i>
 					<span class="text">Nouveau colis </span>
 				</a>
 			</li>
-			<li>
-				<a href="#">
+			<li class="active">
+				<a href="hcolis.html">
 					<i class='bx bx-history' ></i>
 					<span class="text">Historique de colis</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="clients.html">
 					<i class='bx bx-user' ></i>
 					<span class="text">Clients</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="message.html">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">Message</span>
 				</a>
@@ -53,7 +53,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#">
+				<a href="">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Paramètres</span>
 				</a>
@@ -98,10 +98,10 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Tableau de bord</h1>
+					<h1>Historique de colis</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Tableau de bord</a>
+							<a href="#">Historique de colis</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
@@ -115,84 +115,6 @@
 				</a>
 			</div>
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>Nouveau colis </p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>2834</h3>
-						<p>Expéditeurs enregistrés</p>
-					</span>
-				</li>
-				
-			</ul>
-
-
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Commandes récentes</h3>
-						<i class='bx bx-search' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Utilisateur</th>
-								<th>Date d'enregistrement</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Wari Mulumba</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Arrivée</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Ben Miela</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">En attente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Daniel Mabunda</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status process">En traitement</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Vic Kabongo</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">En attente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>Seer Elysée</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Arrivée</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 				
 			</div>
 		</main>
