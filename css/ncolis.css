@@ -590,3 +590,94 @@ body {
 		min-width: 420px;
 	}
 }
+.container {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.popup-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup-content .checkmark {
+  font-size: 40px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.popup-content h2 {
+  margin: 10px 0;
+}
+
+.popup-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

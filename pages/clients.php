@@ -21,31 +21,31 @@
 		</a>
 		<ul class="side-menu top">
 			<li>
-				<a href="../index.html">
+				<a href="../index.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Tableau de bord</span>
 				</a>
 			</li>
 			<li  >
-				<a href="ncolis.html">
+				<a href="ncolis.php">
 					<i class='bx bx-package' ></i>
 					<span class="text">Nouveau colis </span>
 				</a>
 			</li>
 			<li>
-				<a href="hcolis.html">
+				<a href="hcolis.php">
 					<i class='bx bx-history' ></i>
 					<span class="text">Historique de colis</span>
 				</a>
 			</li>
 			<li class="active">
-				<a href="clients.html">
+				<a href="clients.php">
 					<i class='bx bx-user' ></i>
 					<span class="text">Clients</span>
 				</a>
 			</li>
 			<li>
-				<a href="message.html">
+				<a href="message.php">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">Message</span>
 				</a>

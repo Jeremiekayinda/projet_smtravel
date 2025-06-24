@@ -27,25 +27,25 @@
 				</a>
 			</li>
 			<li>
-				<a href="pages/ncolis.html">
+				<a href="pages/ncolis.php">
 					<i class='bx bx-package' ></i>
 					<span class="text">Nouveau colis </span>
 				</a>
 			</li>
 			<li>
-				<a href="pages/hcolis.html">
+				<a href="pages/hcolis.php">
 					<i class='bx bx-history' ></i>
 					<span class="text">Historique de colis</span>
 				</a>
 			</li>
 			<li>
-				<a href="pages/clients.html">
+				<a href="pages/clients.php">
 					<i class='bx bx-user' ></i>
 					<span class="text">Clients</span>
 				</a>
 			</li>
 			<li>
-				<a href="pages/message.html">
+				<a href="pages/message.php">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">Message</span>
 				</a>
