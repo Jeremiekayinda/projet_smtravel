@@ -1,3 +1,16 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "sembdd");
+if ($conn->connect_error) {
+	die("Erreur de connexion : " . $conn->connect_error);
+}
+
+$sql = "SELECT e.*, a.nom AS agence_nom
+        FROM envois e
+        JOIN agences a ON e.agence_id = a.id
+        ORDER BY e.date_envoi DESC";
+
+$result = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
