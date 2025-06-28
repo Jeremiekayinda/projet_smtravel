@@ -2,23 +2,24 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19865849&assignment_repo_type=AssignmentRepo)
 # 🎓 Projet de Fin d’Année – Titre du Projet
 
-Bienvenue ! Ce dépôt a été généré automatiquement via GitHub Classroom pour la remise de votre projet de fin d’année **individuel**.
+Bienvenue dans ce dépôt GitHub, réalisé dans le cadre de mon Projet de Fin d’Études.
+Il s'agit d'une application web complète qui permet à une agence de voyage de gérer efficacement les colis envoyés ou reçus par ses clients.
 
 ---
 
 ## 📌 Objectif du projet
 
-Ce projet a pour but de [décrire l’objectif principal, par exemple : développer une application web/mobile pour gérer les réservations d’une bibliothèque universitaire].
-
+Le système permet d’enregistrer chaque colis avec les informations de la personne qui l’a déposé, de suivre son statut (en attente, envoyé, reçu), et de l’associer à une agence de destination.
+Toutes les données sont centralisées dans une seule base, ce qui permet également d’accéder à un historique détaillé des colis et à une liste complète des clients ayant utilisé le service
 ---
 
 ## 🛠️ Technologies utilisées
 
-- Langage principal : `Python` / `JavaScript` / `Java`
-- Framework : `Django` / `React` / `Laravel`, etc.
-- Base de données : `PostgreSQL` / `MongoDB`, etc.
-- Outils : `GitHub`, `Figma`, `Docker`, etc.
 
+- **Frontend** : HTML5, CSS3, JavaScript
+- **Backend** : PHP 8
+- **Base de données** : MySQL
+- **Serveur local** : XAMPP
 ---
 
 ## 🚀 Etapes pour lancer le projet
@@ -28,26 +29,16 @@ Ce projet a pour but de [décrire l’objectif principal, par exemple : dévelop
 1. Cloner ce dépôt :
 
 ```bash
-   git clone https://github.com/organisation/nom-du-repo.git
+   git clone https://github.com/criagi-upc/projet-final-l2-Jeremiekayinda.git
    cd nom-du-repo
 ````
 
-2. Créer un environnement virtuel (si Python) :
+2. Mettre le projet dans le dossier Https de son serveur 
 
-```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
-3. Installer les dépendances :
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Lancer le serveur :
+3. Lancer le serveur et demarer le projet 
 
-   ```bash
-   python manage.py runserver
-   ```
+  
 
 ---
 
