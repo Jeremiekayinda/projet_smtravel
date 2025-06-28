@@ -88,7 +88,7 @@ Pas de panique ! Voici comment transférer votre code existant dans ce dépôt :
    * Copiez l’URL HTTPS du dépôt créé (ex: `https://github.com/criagi-upc/projet-final-etudiant.git`)
 
 3. 🧠 **Dans votre projet existant (sur votre machine)**
-   Ouvrez un terminal et placez-vous dans le dossier :
+   Ouvrez un terminal et placez-vous dans le dossiers :
 
    ```bash
    cd mon-projet
