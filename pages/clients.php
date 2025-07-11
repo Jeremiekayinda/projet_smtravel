@@ -1,3 +1,20 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "sembdd");
+if ($conn->connect_error) {
+	die("Erreur de connexion : " . $conn->connect_error);
+}
+
+$sql = "SELECT 
+            prenom_client, 
+            nom_client, 
+            sexe_client, 
+            telephone_client, 
+            date_envoi 
+        FROM envois
+        ORDER BY date_envoi DESC";
+
+$result = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -103,20 +120,54 @@
 						<li>
 							<a href="#">Clients</a>
 						</li>
-						<li><i class='bx bx-chevron-right' ></i></li>
+						<li><i class='bx bx-chevron-right'></i></li>
 						<li>
 							<a class="active" href="#">Home</a>
 						</li>
 					</ul>
 				</div>
 				<a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
+					<i class='bx bxs-cloud-download'></i>
 					<span class="text">Télécharger le pdf</span>
 				</a>
 			</div>
-
-				
 			</div>
+			<div class="table-data">
+			<div class="order">
+				<div class="head">
+				
+					<i class='bx bx-search'></i>
+					<i class='bx bx-filter'></i>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Client</th>
+							<th>Sexe</th>
+							<th>Téléphone</th>
+							<th>Date d'envoi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php if ($result->num_rows > 0): ?>
+							<?php while ($row = $result->fetch_assoc()): ?>
+								<tr>
+									<td><?= htmlspecialchars($row['prenom_client'] . " " . $row['nom_client']) ?></td>
+									<td><?= htmlspecialchars($row['sexe_client']) ?></td>
+									<td><?= htmlspecialchars($row['telephone_client']) ?></td>
+									<td><?= date('d/m/Y H:i', strtotime($row['date_envoi'])) ?></td>
+								</tr>
+							<?php endwhile; ?>
+						<?php else: ?>
+							<tr>
+								<td colspan="8">Aucun colis trouvé.</td>
+							</tr>
+						<?php endif; ?>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
 		</main>
 		<!-- MAIN -->
 	</section>

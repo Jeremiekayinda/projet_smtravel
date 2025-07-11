@@ -4,12 +4,15 @@ if ($conn->connect_error) {
 	die("Erreur de connexion : " . $conn->connect_error);
 }
 
-$sql = "SELECT e.*, a.nom AS agence_nom
-        FROM envois e
-        JOIN agences a ON e.agence_id = a.id
-        ORDER BY e.date_envoi DESC";
+// Total des colis
+$reqTotalColis = "SELECT COUNT(*) AS total_colis FROM envois";
+$resTotalColis = $conn->query($reqTotalColis);
+$nbColis = ($resTotalColis->num_rows > 0) ? $resTotalColis->fetch_assoc()['total_colis'] : 0;
 
-$result = $conn->query($sql);
+// Date du jour (formatée en français)
+setlocale(LC_TIME, 'fr_FR.UTF-8');
+$dateDuJour = strftime(" %d %B %Y");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -129,15 +132,15 @@ $result = $conn->query($sql);
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
-						<h3>1020</h3>
-						<p>Nouveau colis </p>
+						<h3><?= $nbColis ?></h3>
+						<p> colis recus </p>
 					</span>
 				</li>
 				<li>
-					<i class='bx bxs-group' ></i>
+					<i class='bx bxs-calendar' ></i>
 					<span class="text">
-						<h3>2834</h3>
-						<p>Expéditeurs enregistrés</p>
+						<h3><?= $dateDuJour ?></h3>
+						<p>Date</p>
 					</span>
 				</li>
 				
